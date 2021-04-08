@@ -1,10 +1,13 @@
 package ro.hibyte.gitclient
 
 import org.dxworks.githubminer.service.repository.branches.GithubBranchService
+import kotlin.io.path.ExperimentalPathApi
 
-fun main() {
+@ExperimentalPathApi
+fun main(args: Array<String>) {
+
     val githubBranchService: GithubBranchService =
-        GithubBranchService("apache", "kafka", githubTokens = listOf("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"))
+        GithubBranchService("apache", "kafka", githubTokens = args.toList())
 
     val branches = githubBranchService.allBranches
 

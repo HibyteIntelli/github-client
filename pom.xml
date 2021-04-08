@@ -127,6 +127,10 @@
             <id>heydo-nexus</id>
             <url>https://nexus.heydoapps.com/repository/heydo-snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>heydo-nexus</id>
+            <url>https://nexus.heydoapps.com/repository/heydo-releseas</url>
+        </repository>
     </distributionManagement>
 
     <repositories>
