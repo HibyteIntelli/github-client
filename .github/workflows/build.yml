@@ -21,4 +21,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print Hello
-        run: echo ${{ sectrets.MY_SECRET }}
+        run: echo ${{ secrets.MY_SECRET }}
