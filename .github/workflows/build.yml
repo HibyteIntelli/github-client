@@ -3,8 +3,6 @@ name: Build
 # Run build on pull requests to the `master` branch
 on:
   push:
-    branches:
-      - *
 
 jobs:
   build:
